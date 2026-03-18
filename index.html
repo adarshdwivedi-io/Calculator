@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Calculator</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="calculator">
+    <div class="display-container">
+        <div class="previous-operand" id="history"></div>
+        <input type="text" id="display" value="0" readonly>
+    </div>
+    
+    <div class="buttons">
+        <button class="clear-btn" data-key="Escape">AC</button>
+        <button data-key="Backspace">DEL</button>
+        <button class="operator" data-key="%">%</button>
+        <button class="operator" data-key="/">÷</button>
+
+        <button data-key="7">7</button>
+        <button data-key="8">8</button>
+        <button data-key="9">9</button>
+        <button class="operator" data-key="*">×</button>
+
+        <button data-key="4">4</button>
+        <button data-key="5">5</button>
+        <button data-key="6">6</button>
+        <button class="operator" data-key="-">−</button>
+
+        <button data-key="1">1</button>
+        <button data-key="2">2</button>
+        <button data-key="3">3</button>
+        <button class="operator" data-key="+">+</button>
+
+        <button data-key="0">0</button>
+        <button data-key=".">.</button>
+        <button class="equals" data-key="Enter">=</button>
+    </div>
+</div>
+
+<!-- JS File -->
+<script src="script.js"></script>
+
+</body>
+</html>
